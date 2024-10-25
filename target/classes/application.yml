@@ -1,0 +1,24 @@
+server:
+  port: 8396
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: graph-center
+
+  data:
+    neo4j:
+      uri: bolt://localhost:7687
+      username: neo4j
+      password: 625211234
+
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+
+#serverId服务器编号（1-999）   serverdbId数据库编号（1-99）
+api:
+  top:
+    serverId: 127.0.0.1-2
+    serverdbId: 3
